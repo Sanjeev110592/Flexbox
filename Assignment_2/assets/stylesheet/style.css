@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, <i class="fa-regular fa-chart-mixed"></i>audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -75,63 +75,69 @@ table {
 }
 
 /* Main */
-
 .main{
 	display: flex;
 	justify-content: space-between;
-	height: 800px;
+	margin: 50px 0;
 }
-.left{
-	width: 35%;
-	background-color: cornflowerblue;
-	border-radius: 20px;
+
+aside{
+	flex: 0 1 25%;
+	background-color: aqua;
+	padding: 32px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
-.right{
+.sidebar-nav{
 	display: flex;
 	flex-direction: column;
-	width: 60%;
-	background-color: aliceblue;
-	border-radius: 20px;
-	align-items: flex-start;
-	padding: 20px 20px;
-	
+	justify-content: space-between;
 }
-.top{
-	width: 90%;
-	height: 48%;
-	margin: auto;
+.sidebar-nav a{
+	text-decoration: none;
+	color: rgb(10, 0, 19);
+	font-weight: 700;
+	padding-top: 16px;
+	vertical-align: middle;
 }
-.top img{
+.sidebar-nav img{
+	vertical-align: middle;
+	margin-right: 12px;
+}
+.sidebar-nav .active{
+	border: 2px solid orange;
+	color: orange;
+	line-height: 20px;
+}
+button{
+	background-color: white;
+	padding: 10px 20px;
+}
+
+.article{
+	flex: 0 1 62%;
+	background-color: rgb(117, 189, 189);
+	border-radius: 10px;
+	padding: 40px 40px;
+}
+.article img{
 	width: 100%;
-	height: 100%;
 	border-radius: 20px;
 }
-.second{
-	width: 90%;
-	height: 48%;
-	margin: auto;
-	text-align: left;
-}
-h1{
-	font-size: 36px;
-	margin-bottom: 30px;
-}
-p{
-	font-size: 18px;
-}
-.second a{
+.article a{
 	display: inline-block;
+	text-decoration: none;
 	background-color: green;
-	width: 200px;
+	color: white;
+	width: 150px;
 	height: 50px;
-	margin: 30px 0;
 	text-align: center;
 	line-height: 50px;
 	border-radius: 5px;
-	text-decoration: none;
-	color: white;
-	font-size: 20px;
 }
+
 
 /* Footer */
 
